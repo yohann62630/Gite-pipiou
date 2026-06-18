@@ -237,7 +237,7 @@ h3 { font-size: 1.75rem; color: var(--forest); }
   max-width: 1180px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
 .activity-card {
@@ -318,6 +318,16 @@ h3 { font-size: 1.75rem; color: var(--forest); }
 .place-list article { padding: 18px; border-radius: 18px; background: var(--cream); border: 1px solid var(--line); }
 .place-list strong { display: block; color: var(--forest); margin-bottom: 6px; }
 .place-list span { color: var(--muted); }
+.place-link {
+  display: inline-flex;
+  margin-top: 10px;
+  color: var(--forest);
+  font-size: .88rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.place-link:hover { color: var(--wood); }
 
 .review-section { background: var(--forest); color: var(--cream); }
 .review-card { max-width: 900px; margin: 0 auto; text-align: center; }
