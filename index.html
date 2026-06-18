@@ -3,12 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gîte Pipiou à Étaples-sur-Mer : appartement cosy avec terrasse, parking gratuit et décoration chaleureuse sur la Côte d’Opale." />
-  <title>Gîte Pipiou | Étaples-sur-Mer</title>
+  <title>Gîte à Étaples-sur-Mer | Gîte Pipiou, Côte d’Opale</title>
+  <meta name="description" content="Découvrez le Gîte Pipiou à Étaples-sur-Mer : appartement cosy pour 2 à 4 personnes, terrasse, parking et activités près du Touquet et de la Côte d’Opale." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#f5efe5" />
+  <link rel="canonical" href="https://gite-pipiou-site.vercel.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Gîte Pipiou" />
+  <meta property="og:title" content="Gîte Pipiou à Étaples-sur-Mer | Côte d’Opale" />
+  <meta property="og:description" content="Un appartement cosy pour 2 à 4 personnes avec terrasse et parking, idéal pour découvrir Étaples, Le Touquet et la Côte d’Opale." />
+  <meta property="og:url" content="https://gite-pipiou-site.vercel.app/" />
+  <meta property="og:image" content="https://gite-pipiou-site.vercel.app/assets/images/pipiou-salon-principal.jpeg" />
+  <meta property="og:image:alt" content="Salon chaleureux du Gîte Pipiou à Étaples-sur-Mer" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gîte Pipiou à Étaples-sur-Mer" />
+  <meta name="twitter:description" content="Appartement cosy pour 2 à 4 personnes avec terrasse et parking sur la Côte d’Opale." />
+  <meta name="twitter:image" content="https://gite-pipiou-site.vercel.app/assets/images/pipiou-salon-principal.jpeg" />
+
+  <link rel="preload" as="image" href="assets/images/pipiou-salon-principal.jpeg" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Gîte Pipiou",
+      "description": "Appartement cosy pour 2 à 4 personnes avec terrasse et parking à Étaples-sur-Mer, idéal pour découvrir Le Touquet et les activités de la Côte d’Opale.",
+      "url": "https://gite-pipiou-site.vercel.app/",
+      "image": [
+        "https://gite-pipiou-site.vercel.app/assets/images/pipiou-salon-principal.jpeg",
+        "https://gite-pipiou-site.vercel.app/assets/images/pipiou-chambre-principale.jpeg",
+        "https://gite-pipiou-site.vercel.app/assets/images/pipiou-terrasse-principale.jpeg"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rue des Pluviers",
+        "postalCode": "62630",
+        "addressLocality": "Étaples-sur-Mer",
+        "addressRegion": "Hauts-de-France",
+        "addressCountry": "FR"
+      },
+      "sameAs": "https://www.gites.fr/gites_gite-pipiou-etaples-2-a-4-personnes_etaples_h4735254.htm",
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Terrasse privative", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Parking gratuit", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Cuisine équipée", "value": true }
+      ]
+    }
+  </script>
 </head>
 <body>
   <header class="site-header" id="top">
@@ -25,6 +74,7 @@
       <a href="#gite">Le gîte</a>
       <a href="#equipements">Équipements</a>
       <a href="#galerie">Galerie</a>
+      <a href="#activites">Activités</a>
       <a href="#alentours">Alentours</a>
       <a class="nav-cta" href="https://www.gites.fr/gites_gite-pipiou-etaples-2-a-4-personnes_etaples_h4735254.htm" target="_blank" rel="noopener">Réserver</a>
     </nav>
@@ -36,7 +86,7 @@
       <div class="hero-overlay"></div>
       <div class="hero-content reveal">
         <p class="eyebrow">Gîte cosy à Étaples · Côte d’Opale</p>
-        <h1>Un cocon chaleureux entre mer, port et nature</h1>
+        <h1>Votre gîte à Étaples-sur-Mer, entre mer, port et nature</h1>
         <p class="hero-text">Un appartement soigneusement décoré pour profiter d’un séjour simple, confortable et reposant à quelques minutes du Touquet.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#gite">Découvrir le gîte</a>
@@ -65,7 +115,7 @@
           </div>
         </div>
         <div class="intro-photo reveal">
-          <img src="assets/images/salon-2.jpeg" alt="Salon cosy du Gîte Pipiou avec canapé et décoration végétale">
+          <img loading="lazy" decoding="async" src="assets/images/pipiou-salon-principal.jpeg" alt="Salon chaleureux du Gîte Pipiou avec canapé et décoration végétale">
           <div class="floating-card">
             <strong>9,7 / 10</strong>
             <span>Une adresse très appréciée</span>
@@ -81,28 +131,28 @@
       </div>
       <div class="feature-grid">
         <article class="feature-card reveal">
-          <img src="assets/images/salon-tv.jpeg" alt="Coin salon avec télévision">
+          <img loading="lazy" decoding="async" src="assets/images/pipiou-salon-tv.jpeg" alt="Coin salon avec télévision">
           <div>
             <h3>Un séjour cosy</h3>
             <p>Un espace salon chaleureux et décoré avec soin pour se détendre après une journée sur la côte.</p>
           </div>
         </article>
         <article class="feature-card reveal">
-          <img src="assets/images/chambre-2.jpeg" alt="Lit double et tête de lit décorative">
+          <img loading="lazy" decoding="async" src="assets/images/pipiou-chambre-principale.jpeg" alt="Chambre chaleureuse sous les combles avec lit double">
           <div>
             <h3>Une chambre douce</h3>
             <p>Une chambre calme, aux tons naturels et rosés, pensée pour un vrai moment de repos.</p>
           </div>
         </article>
         <article class="feature-card reveal">
-          <img src="assets/images/cuisine-1.jpeg" alt="Cuisine équipée du gîte">
+          <img loading="lazy" decoding="async" src="assets/images/pipiou-cuisine-principale.jpeg" alt="Cuisine équipée du gîte">
           <div>
             <h3>Une cuisine équipée</h3>
             <p>Tout le nécessaire pour préparer vos repas simplement pendant votre séjour.</p>
           </div>
         </article>
         <article class="feature-card reveal">
-          <img src="assets/images/terrasse-2.jpeg" alt="Terrasse extérieure avec table et parasol">
+          <img loading="lazy" decoding="async" src="assets/images/pipiou-terrasse-principale.jpeg" alt="Terrasse privative du Gîte Pipiou avec table extérieure">
           <div>
             <h3>Une terrasse agréable</h3>
             <p>Un espace extérieur pour prendre un café, déjeuner ou profiter des beaux jours.</p>
@@ -149,45 +199,142 @@
       <div class="gallery-group reveal">
         <h3>Salon</h3>
         <div class="gallery-grid">
-          <button class="gallery-item large" data-img="assets/images/salon-1.jpeg"><img src="assets/images/salon-1.jpeg" alt="Vue générale du salon"></button>
-          <button class="gallery-item" data-img="assets/images/salon-2.jpeg"><img src="assets/images/salon-2.jpeg" alt="Canapé et fenêtre du salon"></button>
-          <button class="gallery-item" data-img="assets/images/salon-3.jpeg"><img src="assets/images/salon-3.jpeg" alt="Canapé et étagère décorative"></button>
-          <button class="gallery-item" data-img="assets/images/salon-tv.jpeg"><img src="assets/images/salon-tv.jpeg" alt="Mur végétal et télévision"></button>
+          <button class="gallery-item large" data-img="assets/images/pipiou-salon-principal.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-salon-principal.jpeg" alt="Vue générale du salon"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-sejour-cuisine.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-sejour-cuisine.jpeg" alt="Vue du séjour et de la cuisine ouverte"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-salon-angle.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-salon-angle.jpeg" alt="Canapé et étagère décorative"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-salon-tv.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-salon-tv.jpeg" alt="Mur végétal et télévision"></button>
         </div>
       </div>
 
       <div class="gallery-group reveal">
         <h3>Chambre</h3>
         <div class="gallery-grid compact">
-          <button class="gallery-item" data-img="assets/images/chambre-1.jpeg"><img src="assets/images/chambre-1.jpeg" alt="Chambre sous pente avec fenêtre de toit"></button>
-          <button class="gallery-item" data-img="assets/images/chambre-2.jpeg"><img src="assets/images/chambre-2.jpeg" alt="Lit double avec coussins"></button>
-          <button class="gallery-item" data-img="assets/images/chambre-3.jpeg"><img src="assets/images/chambre-3.jpeg" alt="Chambre et armoire"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-chambre-angle.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-chambre-angle.jpeg" alt="Chambre sous pente avec fenêtre de toit"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-chambre-principale.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-chambre-principale.jpeg" alt="Lit double avec coussins"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-chambre-detail.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-chambre-detail.jpeg" alt="Chambre et armoire"></button>
         </div>
       </div>
 
       <div class="gallery-group reveal">
         <h3>Salle de bains</h3>
         <div class="gallery-grid compact">
-          <button class="gallery-item" data-img="assets/images/salle-bain-1.jpeg"><img src="assets/images/salle-bain-1.jpeg" alt="Douche et meuble vasque"></button>
-          <button class="gallery-item" data-img="assets/images/salle-bain-2.jpeg"><img src="assets/images/salle-bain-2.jpeg" alt="Salle de bains avec sèche-serviettes"></button>
-          <button class="gallery-item" data-img="assets/images/salle-bain-3.jpeg"><img src="assets/images/salle-bain-3.jpeg" alt="Miroir et lavabo de la salle de bains"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-salle-bain-principale.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-salle-bain-principale.jpeg" alt="Douche et meuble vasque"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-salle-bain-douche.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-salle-bain-douche.jpeg" alt="Salle de bains avec sèche-serviettes"></button>
         </div>
       </div>
 
       <div class="gallery-group reveal">
         <h3>Cuisine & terrasse</h3>
         <div class="gallery-grid">
-          <button class="gallery-item" data-img="assets/images/cuisine-1.jpeg"><img src="assets/images/cuisine-1.jpeg" alt="Coin repas de la cuisine"></button>
-          <button class="gallery-item" data-img="assets/images/cuisine-2.jpeg"><img src="assets/images/cuisine-2.jpeg" alt="Cuisine équipée compacte"></button>
-          <button class="gallery-item" data-img="assets/images/sejour-cuisine-1.jpeg"><img src="assets/images/sejour-cuisine-1.jpeg" alt="Vue du séjour vers la cuisine"></button>
-          <button class="gallery-item" data-img="assets/images/terrasse-1.jpeg"><img src="assets/images/terrasse-1.jpeg" alt="Terrasse avec table extérieure"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-cuisine-principale.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-cuisine-principale.jpeg" alt="Coin repas de la cuisine"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-cuisine-angle.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-cuisine-angle.jpeg" alt="Cuisine équipée compacte"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-sejour-cuisine.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-sejour-cuisine.jpeg" alt="Vue du séjour vers la cuisine"></button>
+          <button class="gallery-item" data-img="assets/images/pipiou-terrasse-large.jpeg"><img loading="lazy" decoding="async" src="assets/images/pipiou-terrasse-large.jpeg" alt="Terrasse avec table extérieure"></button>
         </div>
+      </div>
+
+      <div class="gallery-group reveal">
+        <h3>Accès & informations pratiques</h3>
+        <div class="gallery-grid compact">
+          <button class="gallery-item" data-img="assets/images/pipiou-couloir.jpeg">
+            <img loading="lazy" decoding="async" src="assets/images/pipiou-couloir.jpeg" alt="Couloir d’accès du Gîte Pipiou">
+          </button>
+          <button class="gallery-item" data-img="assets/images/pipiou-entree.jpeg">
+            <img loading="lazy" decoding="async" src="assets/images/pipiou-entree.jpeg" alt="Entrée du Gîte Pipiou">
+          </button>
+          <button class="gallery-item" data-img="assets/images/pipiou-plan-etaples.jpeg">
+            <img loading="lazy" decoding="async" src="assets/images/pipiou-plan-etaples.jpeg" alt="Plan d’Étaples affiché dans le gîte">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section activities-section" id="activites">
+      <div class="section-heading reveal">
+        <p class="section-kicker">À faire autour du gîte</p>
+        <h2>Activités à proximité</h2>
+        <p>Depuis le Gîte Pipiou, profitez facilement d’Étaples-sur-Mer, du Touquet, de la baie de Canche et des grands espaces de la Côte d’Opale.</p>
+      </div>
+
+      <div class="activities-grid">
+        <article class="activity-card reveal">
+          <span class="activity-badge">Idéal en famille</span>
+          <h3>Maréis, l’univers des marins-pêcheurs</h3>
+          <p>À Étaples-sur-Mer, Maréis est une visite incontournable pour comprendre l’histoire maritime locale. Le centre permet de découvrir la pêche en mer, les aquariums, les animaux marins et plusieurs animations selon la période : visites guidées, nourrissages, ateliers pour enfants ou cours de cuisine.</p>
+          <a class="activity-link" href="https://www.mareis.fr/" target="_blank" rel="noopener noreferrer">Découvrir Maréis</a>
+        </article>
+
+        <article class="activity-card reveal">
+          <span class="activity-badge">Balade locale</span>
+          <h3>Le port d’Étaples et les balades en ville</h3>
+          <p>Flânez autour du port d’Étaples, profitez de l’ambiance maritime, des quais, des restaurants et des petites rues de la ville. Une sortie simple et agréable pour découvrir l’identité de la Côte d’Opale sans reprendre longtemps la voiture.</p>
+        </article>
+
+        <article class="activity-card reveal">
+          <span class="activity-badge">Station balnéaire</span>
+          <h3>Le Touquet-Paris-Plage</h3>
+          <p>À quelques minutes du gîte, Le Touquet offre une ambiance chic et balnéaire : plage, front de mer, centre-ville, commerces, restaurants, marché, activités sportives et promenades. C’est une sortie parfaite pour une journée ou une soirée.</p>
+          <a class="activity-link" href="https://www.letouquet.com/" target="_blank" rel="noopener noreferrer">Voir Le Touquet</a>
+        </article>
+
+        <article class="activity-card reveal">
+          <span class="activity-badge">Nature & balade</span>
+          <h3>Baie de Canche et espaces naturels</h3>
+          <p>La baie de Canche est idéale pour les amoureux de nature : paysages dunaires, estuaire, observation des oiseaux, balades au grand air et points de vue sur les espaces sauvages. Une belle idée pour ralentir et profiter de la Côte d’Opale autrement.</p>
+        </article>
+
+        <article class="activity-card reveal">
+          <span class="activity-badge">Grand air</span>
+          <h3>Balades à vélo et sentiers du littoral</h3>
+          <p>Les environs d’Étaples et du Touquet se prêtent très bien aux balades à vélo et aux promenades sur les sentiers du littoral. Le GR120, aussi appelé sentier du littoral, permet de découvrir plusieurs paysages de la Côte d’Opale.</p>
+        </article>
+
+        <article class="activity-card reveal">
+          <span class="activity-badge">Mer & sensations</span>
+          <h3>Activités nautiques et croisières</h3>
+          <p>Selon la saison, profitez des activités liées à la mer et à la baie : voile, kayak, balades sur l’eau ou croisières en baie de Canche. Une belle façon de découvrir le territoire depuis l’eau.</p>
+        </article>
+
+        <article class="activity-card reveal">
+          <span class="activity-badge">Patrimoine</span>
+          <h3>Le phare de la Canche</h3>
+          <p>Au Touquet, le phare de la Canche fait partie des visites emblématiques. Il offre une découverte du patrimoine local et, selon les périodes d’ouverture, une belle expérience pour prendre de la hauteur sur la station et ses environs.</p>
+        </article>
+
+        <article class="activity-card reveal">
+          <span class="activity-badge">Gourmand</span>
+          <h3>Marché, restaurants et spécialités locales</h3>
+          <p>Entre Étaples et Le Touquet, profitez des marchés, des restaurants, des produits de la mer et des adresses gourmandes de la Côte d’Opale. Une bonne occasion de découvrir les saveurs locales pendant votre séjour.</p>
+        </article>
+      </div>
+
+      <div class="stay-ideas reveal">
+        <h3>Nos idées selon votre séjour</h3>
+        <div class="stay-ideas-grid">
+          <article class="stay-idea">
+            <strong>Pour un week-end en duo</strong>
+            <p>Balade sur le port d’Étaples, dîner au restaurant, promenade au Touquet et coucher de soleil sur la plage.</p>
+          </article>
+          <article class="stay-idea">
+            <strong>Pour un séjour en famille</strong>
+            <p>Visite de Maréis, plage, balade dans la baie de Canche, goûter en ville et découverte des activités du Touquet.</p>
+          </article>
+          <article class="stay-idea">
+            <strong>Pour un séjour nature</strong>
+            <p>Balade dans les dunes, observation de la baie, sortie à vélo et découverte des grands paysages de la Côte d’Opale.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="activities-cta reveal">
+        <p>Que vous veniez pour un week-end reposant, une escapade en famille ou quelques jours au bord de mer, le Gîte Pipiou vous permet de profiter facilement des incontournables d’Étaples-sur-Mer et de la Côte d’Opale.</p>
+        <a class="btn btn-primary" href="https://www.gites.fr/gites_gite-pipiou-etaples-2-a-4-personnes_etaples_h4735254.htm" target="_blank" rel="noopener noreferrer">Réserver le séjour</a>
       </div>
     </section>
 
     <section class="section split-section" id="alentours">
       <div class="split-image reveal">
-        <img src="assets/images/terrasse-2.jpeg" alt="Terrasse extérieure du Gîte Pipiou">
+        <img loading="lazy" decoding="async" src="assets/images/pipiou-terrasse-principale.jpeg" alt="Terrasse privative du Gîte Pipiou">
       </div>
       <div class="split-content reveal">
         <p class="section-kicker">Autour du gîte</p>
@@ -238,15 +385,17 @@
     <nav aria-label="Navigation pied de page">
       <a href="#gite">Le gîte</a>
       <a href="#galerie">Galerie</a>
+      <a href="#activites">Activités</a>
       <a href="#alentours">Alentours</a>
       <a href="#reserver">Réserver</a>
+      <a href="politique-confidentialite.html">Confidentialité</a>
     </nav>
     <p>Site vitrine de présentation · Réservation via l’annonce officielle</p>
   </footer>
 
   <div class="lightbox" aria-hidden="true">
     <button class="lightbox-close" type="button" aria-label="Fermer l’image">×</button>
-    <img src="" alt="Photo agrandie du gîte">
+    <img loading="lazy" decoding="async" src="" alt="Photo agrandie du gîte">
   </div>
 
   <script src="script.js"></script>

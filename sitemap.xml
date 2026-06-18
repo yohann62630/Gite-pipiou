@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://gite-pipiou-site.vercel.app/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://gite-pipiou-site.vercel.app/assets/images/pipiou-salon-principal.jpeg</image:loc>
+      <image:title>Salon du Gîte Pipiou à Étaples-sur-Mer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gite-pipiou-site.vercel.app/assets/images/pipiou-chambre-principale.jpeg</image:loc>
+      <image:title>Chambre du Gîte Pipiou à Étaples-sur-Mer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gite-pipiou-site.vercel.app/assets/images/pipiou-terrasse-principale.jpeg</image:loc>
+      <image:title>Terrasse du Gîte Pipiou à Étaples-sur-Mer</image:title>
+    </image:image>
+  </url>
+</urlset>
