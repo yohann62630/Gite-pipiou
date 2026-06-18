@@ -91,7 +91,7 @@ button { font: inherit; }
 }
 .hero-bg, .hero-overlay { position: absolute; inset: 0; }
 .hero-bg {
-  background-image: url("assets/images/pipiou-salon-principal.jpeg");
+  background-image: url("assets/images/pipiou-salon-principal.webp");
   background-size: cover;
   background-position: center;
   transform: scale(1.03);
