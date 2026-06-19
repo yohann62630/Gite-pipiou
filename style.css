@@ -91,7 +91,7 @@ button { font: inherit; }
 }
 .hero-bg, .hero-overlay { position: absolute; inset: 0; }
 .hero-bg {
-  background-image: url("assets/images/pipiou-salon-principal.webp");
+  background-image: url("assets/images/pipiou-salon-principal.jpeg");
   background-size: cover;
   background-position: center;
   transform: scale(1.03);
@@ -365,6 +365,13 @@ h3 { font-size: 1.75rem; color: var(--forest); }
   border-color: var(--line) !important;
 }
 .booking-actions .btn:not(:disabled):hover { box-shadow: 0 14px 32px rgba(31,59,47,.14); }
+
+.booking-actions .booking-platform:nth-child(3) {
+  grid-column: 1 / -1;
+  width: calc((100% - 14px) / 2);
+  justify-self: center;
+}
+
 .booking-call { grid-column: 1 / -1; width: min(100%, 330px) !important; justify-self: center; }
 .booking-box .booking-note { margin-top: 24px !important; font-size: .88rem; }
 
@@ -409,8 +416,10 @@ h3 { font-size: 1.75rem; color: var(--forest); }
   cursor: pointer;
 }
 
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s ease, transform .8s ease; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+/* Animation progressive : contenu visible même si JavaScript ne se lance pas */
+.reveal { opacity: 1; transform: none; }
+html.js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s ease, transform .8s ease; }
+html.js .reveal.visible { opacity: 1; transform: translateY(0); }
 
 @media (max-width: 1080px) {
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
@@ -466,6 +475,12 @@ h3 { font-size: 1.75rem; color: var(--forest); }
   .activity-card { padding: 22px; }
   .stay-ideas { padding: 26px 20px; }
   .booking-actions { grid-template-columns: 1fr; }
+
+  .booking-actions .booking-platform:nth-child(3) {
+  grid-column: auto;
+  width: 100%;
+}
+
   .booking-call { grid-column: auto; width: 100% !important; }
   h1 { font-size: clamp(2.85rem, 17vw, 4.3rem); }
   h2 { font-size: clamp(2.1rem, 12vw, 3.5rem); }
@@ -492,4 +507,64 @@ h3 { font-size: 1.75rem; color: var(--forest); }
   .legal-page .site-header { padding-inline: 20px; }
   .legal-back { padding: 9px 12px; font-size: .82rem; }
   .legal-main { width: min(100% - 32px, 820px); padding: 56px 0 72px; }
+}
+
+
+/* Ajouts site multi-pages */
+.main-nav a[aria-current="page"] {
+  color: var(--forest);
+}
+.main-nav a[aria-current="page"]::after {
+  width: 100%;
+}
+.page-hero {
+  min-height: 56vh;
+  padding-top: 150px;
+  padding-bottom: 76px;
+}
+.page-hero h1 {
+  max-width: 980px;
+  font-size: clamp(3rem, 6vw, 6rem);
+}
+.gite-hero .hero-bg { background-image: url("assets/images/pipiou-sejour-cuisine.jpeg"); }
+.photos-hero .hero-bg { background-image: url("assets/images/pipiou-terrasse-large.jpeg"); }
+.activities-hero .hero-bg { background-image: url("assets/images/pipiou-terrasse-principale.jpeg"); }
+.reservation-hero .hero-bg { background-image: url("assets/images/pipiou-salon-principal.jpeg"); }
+.contact-hero .hero-bg { background-image: url("assets/images/pipiou-terrasse-principale.jpeg"); }
+.contact-section {
+  background: #fff;
+}
+.contact-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.contact-card {
+  padding: 30px;
+  border-radius: 24px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 45px rgba(31,31,31,.08);
+}
+.contact-card p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+.contact-links {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+.contact-links a {
+  display: inline-flex;
+  color: var(--forest);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 860px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .page-hero { min-height: 48vh; }
 }
