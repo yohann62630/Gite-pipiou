@@ -350,7 +350,6 @@ h3 { font-size: 1.75rem; color: var(--forest); }
   background: #fff;
   box-shadow: var(--shadow);
 }
-.booking-box[id] { scroll-margin-top: 110px; }
 .booking-box p:not(.section-kicker) { color: var(--muted); line-height: 1.75; max-width: 620px; margin: 18px auto 0; }
 .booking-actions {
   display: grid;
@@ -365,10 +364,7 @@ h3 { font-size: 1.75rem; color: var(--forest); }
   background: var(--sand);
   border-color: var(--line) !important;
 }
-.booking-contact-button { color: var(--forest); background: #fff; border-color: var(--forest) !important; }
 .booking-actions .btn:not(:disabled):hover { box-shadow: 0 14px 32px rgba(31,59,47,.14); }
-.booking-actions .is-placeholder { opacity: .58; cursor: not-allowed; }
-.booking-actions .is-placeholder:hover { transform: none; }
 .booking-call { grid-column: 1 / -1; width: min(100%, 330px) !important; justify-self: center; }
 .booking-box .booking-note { margin-top: 24px !important; font-size: .88rem; }
 
