@@ -350,18 +350,27 @@ h3 { font-size: 1.75rem; color: var(--forest); }
   background: #fff;
   box-shadow: var(--shadow);
 }
+.booking-box[id] { scroll-margin-top: 110px; }
 .booking-box p:not(.section-kicker) { color: var(--muted); line-height: 1.75; max-width: 620px; margin: 18px auto 0; }
-.address-card {
+.booking-actions {
   display: grid;
-  gap: 6px;
-  margin: 28px auto;
-  padding: 18px;
-  max-width: 480px;
-  border-radius: 20px;
-  background: var(--sand);
-  color: var(--muted);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 32px auto 0;
+  max-width: 680px;
 }
-.address-card strong { color: var(--forest); }
+.booking-actions .btn { width: 100%; border: 1px solid transparent; }
+.booking-platform {
+  color: var(--forest);
+  background: var(--sand);
+  border-color: var(--line) !important;
+}
+.booking-contact-button { color: var(--forest); background: #fff; border-color: var(--forest) !important; }
+.booking-actions .btn:not(:disabled):hover { box-shadow: 0 14px 32px rgba(31,59,47,.14); }
+.booking-actions .is-placeholder { opacity: .58; cursor: not-allowed; }
+.booking-actions .is-placeholder:hover { transform: none; }
+.booking-call { grid-column: 1 / -1; width: min(100%, 330px) !important; justify-self: center; }
+.booking-box .booking-note { margin-top: 24px !important; font-size: .88rem; }
 
 .site-footer {
   display: grid;
@@ -460,6 +469,8 @@ h3 { font-size: 1.75rem; color: var(--forest); }
   .activities-grid { grid-template-columns: 1fr; }
   .activity-card { padding: 22px; }
   .stay-ideas { padding: 26px 20px; }
+  .booking-actions { grid-template-columns: 1fr; }
+  .booking-call { grid-column: auto; width: 100% !important; }
   h1 { font-size: clamp(2.85rem, 17vw, 4.3rem); }
   h2 { font-size: clamp(2.1rem, 12vw, 3.5rem); }
 }
