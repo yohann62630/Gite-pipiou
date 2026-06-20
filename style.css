@@ -534,8 +534,8 @@ html.js .reveal.visible { opacity: 1; transform: translateY(0); }
 }
 .gite-hero .hero-bg { background-image: url("assets/images/pipiou-sejour-cuisine.jpeg"); }
 .photos-hero .hero-bg { background-image: url("assets/images/pipiou-terrasse-large.jpeg"); }
-.activities-hero .hero-bg { background-image: url("assets/images/pipiou-terrasse-principale.jpeg"); }
-.reservation-hero .hero-bg { background-image: url("assets/images/pipiou-salon-principal.jpeg"); }
+.activities-hero .hero-bg { background-image: url("assets/images/terrasse-arbres-gite-pipiou.jpeg"); }
+.reservation-hero .hero-bg { background-image: url("assets/images/pipiou-chambre-principale.jpeg"); }
 .contact-hero .hero-bg { background-image: url("assets/images/pipiou-terrasse-principale.jpeg"); }
 .contact-section {
   background: #fff;
