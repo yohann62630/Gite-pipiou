@@ -107,7 +107,7 @@ button { font: inherit; }
 }
 .hero-content { position: relative; max-width: 780px; }
 .eyebrow, .section-kicker {
-  margin: 0 0 14px;
+  margin: 0 0 2px;
   color: var(--ochre);
   text-transform: uppercase;
   letter-spacing: .18em;
